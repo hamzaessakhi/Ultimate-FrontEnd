@@ -1,2 +1,25 @@
 .header 
     i.fa.fa-exchange.fa-lg.toggle-sidebar
+    .dropdown.notifications-container
+        i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        .dropdown-menu(aria-labelledby='notifications') 
+            .noti-head   Notification 
+                    span 50
+            .noti-content 
+                ul.list-unstyled    
+                    li
+                        i.fa.fa-envelope-o.fa-lg 
+                        |You got Email From  hamzaessakhi
+                    li
+                        i.fa.fa-money.fa-lg 
+                        |You got Money From  hamzaessakhi
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        |You got Email From  hamzaessakhi
+                    li
+                        i.fa.fa-thumbs-o-up.fa-lg
+                        |You got Like From  hamzaessakhi
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        |You got Email From  hamzaessakhi
+            .noti-foot.text-center: a(href="#") View All Notification
