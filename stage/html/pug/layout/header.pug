@@ -24,4 +24,32 @@
                         |You got Email From  hamzaessakhi
             .noti-foot.text-center: a(href="#") View All Notification
     i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
-    
+    .dropdown.usermenu-container
+        .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.avatar.rounded-circle(src="https://placekitten.com/200/300",alt="Use Avatar")
+            span.user Hamza Essakhi
+            i.fa.fa-angle-down.fa-lg
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu') 
+            .user-info
+                h3 hamza essakhi
+                P Premium Member
+            hr 
+            ul.activities-list.list-unstyled
+                li Add Comment on Post "toto momo bobo"
+                li Created Post on category "Science"
+                li Shared Post on chart PAge
+                li Add comment op Post "toto momo bobo"
+            hr
+            .row.usermenu-links
+                .col    
+                    .link-box
+                        i.fa.fa-gear.fa-lg.fa-fw
+                        span Settings
+                .col    
+                    .link-box
+                        i.fa.fa-user.fa-lg.fa-fw
+                        span Profile
+                .col    
+                    .link-box
+                        i.fa.fa-power-off.fa-lg.fa-fw
+                        span Logout
