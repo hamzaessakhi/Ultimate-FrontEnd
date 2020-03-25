@@ -21,7 +21,12 @@ $('.toggle-submenu').on('click',function(){
             closeFullscreen();
         }
     });
-    
+    // Toggle settings
+    $(".toggle-settings").on('click',function(){
+      $(this).find('i').toggleClass('fa-spin');
+      $(this).parent().
+      toggleClass('hide-settings'); 
+    });
 });
 
 var elem = document.documentElement;
